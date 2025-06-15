@@ -53,6 +53,6 @@ public class LocalMongoConfig {
         String host = mongo.getHost();
         Integer port = mongo.getMappedPort(MONGODB_INNER_PORT);
 
-        return new ConnectionString("mongo://" + host + ":" + port + "/" + DATABASE_NAME);
+        return new ConnectionString("mongodb://" + host + ":" + port + "/" + DATABASE_NAME);
     }
 }
